@@ -1,0 +1,51 @@
+{
+  "name": "multicore-server-express",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/carlosnoria/multicore-server-express.git",
+  "author": "Carlos Noria <nucinm@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs": "typedoc",
+    "build": "rimraf dist && tsc",
+    "build:start": "yarn run build && node ./dist/src/index.js",
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts",
+    "eslint": "eslint ./ --cache --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "get-current-line": "^6.6.0",
+    "morgan": "^1.10.0",
+    "typeparse": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.5.1",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.4"
+  }
+}
